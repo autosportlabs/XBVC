@@ -9,16 +9,16 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = "XBVC",
-    version = "0.0.1",
-    author = "Jeff Ciesielski",
-    author_email = "jeffciesielski@gmail.com",
-    description = ("eXtensible Bit Vector Communication (protocol)"),
-    license = "MIT",
-    keywords = "usart communication microcontroller",
-    url = "https://github.com/Jeff-Ciesielski/XBVC",
+    name="XBVC",
+    version="0.0.2",
+    author="Jeff Ciesielski",
+    author_email="jeffciesielski@gmail.com",
+    description=("eXtensible Bit Vector Communication (protocol)"),
+    license="MIT",
+    keywords="usart communication microcontroller",
+    url="https://github.com/Jeff-Ciesielski/XBVC",
     packages=['XBVC', 'XBVC.emitters', 'XBVC.emitters'],
-    package_dir={'XBVC': 'src', 'XBVC.emitters':os.path.join('src','emitters')},
+    package_dir={'XBVC': 'src', 'XBVC.emitters':os.path.join('src', 'emitters')},
     package_data={'XBVC.emitters': ['templates/*.*']},
     long_description=read('README.md'),
     classifiers=[

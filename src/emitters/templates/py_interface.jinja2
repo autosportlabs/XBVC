@@ -232,10 +232,18 @@ class XBVCEdgePoint(object):
 
     def stop(self):
         self._stop_event.set()
-
-        self._recv_thread_handle.join()
+        try:
+            self._recv_thread_handle.join()
+        except:
+            pass
+        
         self._recv_thread_handle = None
-        self._dispatch_thread_handle.join()
+        
+        try:
+            self._dispatch_thread_handle.join()
+        except:
+            pass
+        
         self._dispatch_thread_handle = None
 
     def flush(self):
