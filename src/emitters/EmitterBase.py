@@ -10,7 +10,7 @@ class SourceFile(object):
 
     def save_to_disk(self, path):
         with open(os.path.join(path, self.name), 'wb') as f:
-            f.write(self.content)
+            f.write(str.encode(self.content))
 
     def __str__(self):
         return self.content
