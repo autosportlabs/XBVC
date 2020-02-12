@@ -10,7 +10,7 @@ def read(fname):
 
 setup(
     name="XBVC",
-    version="0.0.3",
+    version="0.0.4",
     author="Jeff Ciesielski",
     author_email="jeffciesielski@gmail.com",
     description=("eXtensible Bit Vector Communication (protocol)"),
